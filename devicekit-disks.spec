@@ -24,7 +24,7 @@ BuildRequires: devicekit-devel
 BuildRequires: sqlite-devel
 BuildRequires: device-mapper-devel >= %{device_mapper_version}
 BuildRequires: intltool
-BuildRequires: asmart-devel >= %{libatasmart_version}
+BuildRequires: libatasmart-devel >= %{libatasmart_version}
 BuildRequires: zlib-devel
 # for now, to get gudev-1.0, until we can depend on udev >= 143 where it is libgudev1-devel
 BuildRequires: libgudev-devel
