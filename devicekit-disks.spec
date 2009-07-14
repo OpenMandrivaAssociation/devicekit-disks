@@ -21,7 +21,7 @@ BuildRequires: dbus-glib-devel >= %{dbus_glib_version}
 BuildRequires: polkit-1-devel >= %{polkit_version}
 BuildRequires: parted-devel >= %{parted_version}
 BuildRequires: devicekit-devel
-BuildRequires: sqlite-devel
+BuildRequires: sqlite3-devel
 BuildRequires: device-mapper-devel >= %{device_mapper_version}
 BuildRequires: intltool
 BuildRequires: gtk-doc
