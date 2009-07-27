@@ -11,7 +11,7 @@
 Summary: Disk Management Service
 Name: devicekit-disks
 Version: 005
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv2+
 Group: System/Configuration/Hardware
 URL: http://gitweb.freedesktop.org/?p=users/david/DeviceKit-disks.git;a=summary
