@@ -11,16 +11,15 @@
 Summary: Disk Management Service
 Name: devicekit-disks
 Version: 005
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPLv2+
 Group: System/Configuration/Hardware
-URL: http://gitweb.freedesktop.org/?p=users/david/DeviceKit-disks.git;a=summary
+URL: http://cgit.freedesktop.org/DeviceKit/DeviceKit-disks/
 Source0: %{oname}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: dbus-glib-devel >= %{dbus_glib_version}
 BuildRequires: polkit-1-devel >= %{polkit_version}
 BuildRequires: parted-devel >= %{parted_version}
-BuildRequires: devicekit-devel
 BuildRequires: sqlite3-devel
 BuildRequires: device-mapper-devel >= %{device_mapper_version}
 BuildRequires: intltool
@@ -31,21 +30,17 @@ BuildRequires: zlib-devel
 BuildRequires: libgudev-devel
 BuildRequires: libudev-devel >= %{udev_version}
 BuildRequires: sg3_utils-devel >= %{sg3_utils_version}
-Requires: devicekit
 # for mkfs.xfs, xfs_admin
-Requires: xfsprogs
+Suggests: xfsprogs
 # for mkfs.vfat
-Requires: dosfstools
+Suggests: dosfstools
 # for mlabel
 Requires: mtools
 # for mkntfs
 # no ntfsprogs on ppc, though
 %ifnarch ppc ppc64
-Requires: ntfsprogs
+Suggests: ntfsprogs
 %endif
-
-# for /proc/self/mountinfo, only available in 2.6.26 or higher
-Conflicts: kernel < 2.6.26
 
 %description
 DeviceKit-disks provides a daemon, D-Bus API and command line tools
