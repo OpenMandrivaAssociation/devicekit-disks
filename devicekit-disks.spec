@@ -22,7 +22,6 @@ BuildRequires: polkit-1-devel >= %{polkit_version}
 BuildRequires: parted-devel >= %{parted_version}
 BuildRequires: sqlite3-devel
 BuildRequires: device-mapper-devel >= %{device_mapper_version}
-BuildRequires: devicekit-power-devel >= 008
 BuildRequires: intltool
 BuildRequires: gtk-doc
 BuildRequires: libatasmart-devel >= %{libatasmart_version}
