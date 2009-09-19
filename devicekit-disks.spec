@@ -15,7 +15,7 @@ Release: %mkrel 1
 License: GPLv2+
 Group: System/Configuration/Hardware
 URL: http://cgit.freedesktop.org/DeviceKit/DeviceKit-disks/
-Source0: %{oname}-%{version}.tar.gz
+Source0: http://hal.freedesktop.org/releases/%{oname}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: dbus-glib-devel >= %{dbus_glib_version}
 BuildRequires: polkit-1-devel >= %{polkit_version}
