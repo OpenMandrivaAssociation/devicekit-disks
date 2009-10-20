@@ -10,7 +10,7 @@
 
 Summary: Disk Management Service
 Name: devicekit-disks
-Version: 007
+Version: 008
 Release: %mkrel 1
 License: GPLv2+
 Group: System/Configuration/Hardware
