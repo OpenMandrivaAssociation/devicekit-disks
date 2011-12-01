@@ -62,19 +62,19 @@ D-Bus interface definitions for DeviceKit-disks.
 make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/polkit-1/extensions/*.la
-rm -f $RPM_BUILD_ROOT%{_libdir}/polkit-1/extensions/*.a
+rm -f %{buildroot}%{_libdir}/polkit-1/extensions/*.la
+rm -f %{buildroot}%{_libdir}/polkit-1/extensions/*.a
 
 # TODO: should be fixed upstream
-chmod 0644 $RPM_BUILD_ROOT%{_sysconfdir}/profile.d/devkit-disks-bash-completion.sh
+chmod 0644 %{buildroot}%{_sysconfdir}/profile.d/devkit-disks-bash-completion.sh
 
 %find_lang %{oname}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{oname}.lang
 %defattr(-,root,root,-)
